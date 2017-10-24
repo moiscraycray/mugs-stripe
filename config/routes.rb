@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :mugs
   resources :profiles
   root 'pages#index'
 

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mugs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mugs.each do |mug| %>
+      <tr>
+        <td><%= mug.name %></td>
+        <td><%= mug.description %></td>
+        <td><%= mug.price %></td>
+        <td><%= link_to 'Show', mug %></td>
+        <td><%= link_to 'Edit', edit_mug_path(mug) %></td>
+        <td><%= link_to 'Destroy', mug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mug', new_mug_path %>

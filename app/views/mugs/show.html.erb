@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mug.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @mug.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @mug.price %>
+</p>
+
+<%= link_to 'Edit', edit_mug_path(@mug) %> |
+<%= link_to 'Back', mugs_path %>
