@@ -16,6 +16,11 @@
 
 @import "bootstrap";
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} // This disables horizontal scrolling
+
 // nav
 .navigation {
   list-style: none;
@@ -27,3 +32,8 @@
   display: inline;
 }
 //end nav
+
+img {
+  max-height: 400px;
+  width: auto;
+}
