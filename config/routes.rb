@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :profiles
   root 'pages#index'
 
   devise_for :users
